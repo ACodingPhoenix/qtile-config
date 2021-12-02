@@ -25,7 +25,9 @@ For easy access to the Qtile config you can add the following line of code to yo
 **MOD + Enter:** Open terminal ( Define terminal in config.py )  
 **MOD + W:** Open webbrowser ( Define browser in config.py )  
 **MOD + F:** Open filemanager ( Define filemanager in config.py )  
-**MOD +  V:** Open VirutalBox ( Disabled by default )  
+**MOD +  V:** Open VirutalBox ( Disabled by default )
+
+**MOD + \<Drag with your mouse>:** Turn dragged window into floating instead of collumn.
 
 
 
