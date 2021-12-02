@@ -22,7 +22,7 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Launch Prompt"),
     Key([mod], "w", lazy.spawn("brave"), desc="Launch Brave"),
     Key([mod], "e", lazy.spawn("code"), desc="Launch Code OSS"),
-    #Key([mod], "f", lazy.spawn("pcmanfm"), desc="Launch Pcmanfm"),
+    Key([mod], "f", lazy.spawn("pcmanfm"), desc="Launch Pcmanfm"),
     #Key([mod], "v", lazy.spawn("virtualbox"), desc="Launch Virtualbox"),
 
 
