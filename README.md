@@ -11,25 +11,27 @@ For easy access to the Qtile config you can add the following line of code to yo
 
 
 ## Keybinds
-**MOD + Shift + R:** Reload Qtile config
-**MOD + Shift + Q:** Quit Qtile
-**MOD + \<Number>:** Switch between workspaces
+**MOD + Shift + R:** Reload Qtile config  
+**MOD + Shift + Q:** Quit Qtile  
+**MOD + \<Number>:** Switch between workspaces  
 
-**MOD + X:** Close focused window
-**MOD + Ctrl + \<Arrow Keys>:** Resize focused window
-**MOD + Shift + \<Arrow Keys>:** Move focused window
-**MOD + Shift + \<Number>:** Move focused window to different workspace.
-**MOD + Tab:** Toggle fullscreen on focused window. ( Actually this switches layouts but we only have 2 so this toggles it )
+**MOD + X:** Close focused window  
+**MOD + Ctrl + \<Arrow Keys>:** Resize focused window  
+**MOD + Shift + \<Arrow Keys>:** Move focused window  
+**MOD + Shift + \<Number>:** Move focused window to different workspace.  
+**MOD + Tab:** Toggle fullscreen on focused window. ( Actually this switches layouts but we only have 2 so this toggles it )  
 
-**MOD + R:** Opens run prompt at the right side of topbar. 
-**MOD + Enter:** Open terminal ( Define terminal in config.py )
-**MOD + W:** Open webbrowser ( Define browser in config.py )
-**MOD + F:** Open filemanager ( Define filemanager in config.py )
+**MOD + R:** Opens run prompt at the right side of topbar.   
+**MOD + Enter:** Open terminal ( Define terminal in config.py )  
+**MOD + W:** Open webbrowser ( Define browser in config.py )  
+**MOD + F:** Open filemanager ( Define filemanager in config.py )  
 **MOD +  V:** Open VirutalBox ( Disabled by default )
 
+**MOD + \<Drag with your mouse>:** Turn dragged window into floating instead of collumn.
 
 
-## Dependencies
 
- - Alsa-Utils
- - Pulsemixer
+## Dependencies  
+
+ - Alsa-Utils  
+ - Pulsemixer  
