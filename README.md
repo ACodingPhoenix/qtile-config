@@ -35,3 +35,8 @@ For easy access to the Qtile config you can add the following line of code to yo
 
  - Alsa-Utils  
  - Pulsemixer  
+
+## Known bugs
+- Volume control jumps arround a lot, should add 5% per click but adds random values.
+- Brightness control does not work yet.
+- When you drag a windows into floating there is no way to set it back to column mode other then to reload the config.
