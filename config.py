@@ -19,10 +19,11 @@ keys = [
     # Custom launch commands
     #Key([mod], "r", lazy.spawn("dmenu_run"), desc="Launch Dmenu"),
     #Key([mod], "w", lazy.spawn("firefox-esr"), desc="Launch Firefox"),
-    Key([mod], "r", lazy.spawncmd(), desc="Launch Prompt"),
+    Key([mod], "r", lazy.spawn("xlunch --input /etc/xlunch/entries.dsv"), desc="Launch Prompt/App launcher"),
     Key([mod], "w", lazy.spawn("brave"), desc="Launch Brave"),
     Key([mod], "e", lazy.spawn("code"), desc="Launch Code OSS"),
     Key([mod], "f", lazy.spawn("pcmanfm"), desc="Launch Pcmanfm"),
+    Key(["control", "shift"], "KP_Insert", lazy.spawn("scrot -s"), desc="Make screenshot with select area."),
     #Key([mod], "v", lazy.spawn("virtualbox"), desc="Launch Virtualbox"),
 
 
@@ -78,15 +79,15 @@ keys = [
     Key(["mod4"], "l", lazy.spawn("betterlockscreen -l"), desc="Lock screen"),
 ]
 
-group_names = [("WWW", {'layout': 'Columns'}),
-               ("DEV", {'layout': 'Columns'}),
-               ("SYS", {'layout': 'Columns'}),
-               ("CHAT", {'layout': 'Columns'}),
-               ("VBOX", {'layout': 'Columns'}),
-               ("DOC", {'layout': 'Columns'}),
-               ("MUS", {'layout': 'Columns'}),
-               ("VID", {'layout': 'Columns'}),
-               ("OTHER", {'layout': 'Columns'})]
+group_names = [("  ", {'layout': 'Columns'}),
+               ("  ", {'layout': 'Columns'}),
+               ("  ", {'layout': 'Columns'}),
+               ("  ", {'layout': 'Columns'}),
+              # ("VBOX", {'layout': 'Columns'}),
+               ("  ", {'layout': 'Columns'}),
+               ("  ", {'layout': 'Columns'}),
+               (" ", {'layout': 'Columns'}),
+               ("  ", {'layout': 'Columns'})]
 
 groups = [Group(name, **kwargs) for name, kwargs in group_names]
 
@@ -98,7 +99,7 @@ colors = [["#282c34", "#282c34"], # 0
           ["#3d3f4b", "#434758"], # 1
           ["#ffffff", "#ffffff"], # 2
           ["#AEC3B0", "#AEC3B0"], # 3
-          ["#124559", "#124559"], # 4
+          ["#ff9900", "ff9900"], #4
           ["#598392", "#598392"], # 5
           ]
 
@@ -125,9 +126,9 @@ layouts = [
     # layout.Zoomy(),
 ]
 
-widget_defaults = dict( font='sans',
-    fontsize=12,
-    padding=3,
+widget_defaults = dict( font='ubuntumono',
+    fontsize=16,
+    padding=5,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -145,7 +146,7 @@ screens = [
                 this_screen_border = colors [4],
                 other_current_screen_border = colors[4],
                 other_screen_border = colors[4],
-                foreground = colors[2],
+                foreground = colors[1],
                 background = colors[0]
                 ),
                 widget.Spacer(
